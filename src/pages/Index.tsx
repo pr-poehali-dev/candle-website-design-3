@@ -457,27 +457,75 @@ const Index = () => {
           </div>
         </section>
 
-        <section className="bg-muted rounded-lg p-12 text-center">
-          <h2 className="text-4xl font-bold mb-4">О нашей мануфактуре</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-6">
-            Мы создаём свечи из 100% натурального соевого воска с эфирными маслами высшего качества. 
-            Каждая свеча изготавливается вручную с любовью и заботой о вашем комфорте.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            <div>
-              <Icon name="Leaf" size={32} className="mx-auto mb-3 text-primary" />
-              <h3 className="font-semibold text-xl mb-2">Натуральный состав</h3>
-              <p className="text-sm text-muted-foreground">Соевый воск и эфирные масла</p>
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold text-center mb-12">О нас</h2>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="space-y-6">
+              <h3 className="text-3xl font-semibold">Наша история</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Lumière родилась из любви к натуральным ароматам и уютной атмосфере домашнего тепла. 
+                В 2020 году мы начали создавать свечи для себя и близких, экспериментируя с композициями 
+                эфирных масел и натуральным соевым воском.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Сегодня каждая наша свеча — это результат кропотливого труда и творческого поиска. 
+                Мы вручную отливаем каждую свечу, тщательно подбираем ароматические композиции 
+                и используем только экологичные материалы.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Наша миссия — создавать моменты спокойствия и гармонии в повседневной жизни через 
+                силу натуральных ароматов.
+              </p>
             </div>
-            <div>
-              <Icon name="Heart" size={32} className="mx-auto mb-3 text-primary" />
-              <h3 className="font-semibold text-xl mb-2">Ручная работа</h3>
-              <p className="text-sm text-muted-foreground">Каждая свеча уникальна</p>
+            
+            <div className="grid grid-cols-2 gap-4">
+              <Card className="p-6 text-center">
+                <div className="text-4xl font-bold text-primary mb-2">100%</div>
+                <p className="text-sm text-muted-foreground">Натуральный соевый воск</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <div className="text-4xl font-bold text-primary mb-2">50+</div>
+                <p className="text-sm text-muted-foreground">Часов горения</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <div className="text-4xl font-bold text-primary mb-2">15+</div>
+                <p className="text-sm text-muted-foreground">Уникальных ароматов</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <div className="text-4xl font-bold text-primary mb-2">2020</div>
+                <p className="text-sm text-muted-foreground">Год основания</p>
+              </Card>
             </div>
-            <div>
-              <Icon name="Clock" size={32} className="mx-auto mb-3 text-primary" />
-              <h3 className="font-semibold text-xl mb-2">Долгое горение</h3>
-              <p className="text-sm text-muted-foreground">До 55 часов аромата</p>
+          </div>
+
+          <div className="bg-muted rounded-lg p-12">
+            <h3 className="text-3xl font-semibold text-center mb-8">Наши ценности</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <Icon name="Leaf" size={40} className="mx-auto mb-4 text-primary" />
+                <h4 className="font-semibold text-xl mb-3">Экологичность</h4>
+                <p className="text-muted-foreground">
+                  Мы используем только натуральный соевый воск, эфирные масла и перерабатываемую упаковку. 
+                  Наше производство не вредит природе.
+                </p>
+              </div>
+              <div className="text-center">
+                <Icon name="Heart" size={40} className="mx-auto mb-4 text-primary" />
+                <h4 className="font-semibold text-xl mb-3">Ручная работа</h4>
+                <p className="text-muted-foreground">
+                  Каждая свеча создаётся вручную с вниманием к деталям. Мы контролируем качество 
+                  на каждом этапе производства.
+                </p>
+              </div>
+              <div className="text-center">
+                <Icon name="Sparkles" size={40} className="mx-auto mb-4 text-primary" />
+                <h4 className="font-semibold text-xl mb-3">Качество</h4>
+                <p className="text-muted-foreground">
+                  Мы работаем только с проверенными поставщиками эфирных масел высшего качества 
+                  и тестируем каждую композицию.
+                </p>
+              </div>
             </div>
           </div>
         </section>
