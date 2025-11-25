@@ -314,6 +314,7 @@ const Index = () => {
               </div>
             </SheetContent>
           </Sheet>
+          </div>
         </div>
       </header>
 
