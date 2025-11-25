@@ -529,6 +529,115 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold text-center mb-12">Доставка и оплата</h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <Card className="p-8">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Icon name="Package" size={28} className="text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold mb-2">Доставка</h3>
+                  <p className="text-muted-foreground">Надёжная упаковка и быстрая отправка</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex gap-3">
+                  <Icon name="Truck" size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold mb-1">По России</h4>
+                    <p className="text-sm text-muted-foreground">CDEK и Почта России. Срок доставки 3-7 дней. Стоимость от 300 ₽</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-3">
+                  <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold mb-1">Москва и МО</h4>
+                    <p className="text-sm text-muted-foreground">Курьерская доставка 1-2 дня. Бесплатно при заказе от 3000 ₽</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-3">
+                  <Icon name="Store" size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold mb-1">Самовывоз</h4>
+                    <p className="text-sm text-muted-foreground">Бесплатно из нашей мастерской в Москве</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-3">
+                  <Icon name="Gift" size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold mb-1">Подарочная упаковка</h4>
+                    <p className="text-sm text-muted-foreground">Красивая упаковка с лентой и открыткой — 150 ₽</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Icon name="CreditCard" size={28} className="text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold mb-2">Оплата</h3>
+                  <p className="text-muted-foreground">Удобные способы оплаты</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex gap-3">
+                  <Icon name="CreditCard" size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold mb-1">Банковская карта</h4>
+                    <p className="text-sm text-muted-foreground">Visa, Mastercard, МИР. Безопасная оплата онлайн</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-3">
+                  <Icon name="Smartphone" size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold mb-1">СБП</h4>
+                    <p className="text-sm text-muted-foreground">Моментальный перевод через Систему Быстрых Платежей</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-3">
+                  <Icon name="Wallet" size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold mb-1">При получении</h4>
+                    <p className="text-sm text-muted-foreground">Наличными или картой курьеру (только для Москвы)</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-3">
+                  <Icon name="ShieldCheck" size={20} className="text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold mb-1">Безопасность</h4>
+                    <p className="text-sm text-muted-foreground">Все платежи защищены SSL-шифрованием</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          <Card className="p-8 bg-accent/20 border-accent">
+            <div className="text-center max-w-2xl mx-auto">
+              <Icon name="Info" size={32} className="mx-auto mb-4 text-primary" />
+              <h3 className="text-xl font-semibold mb-3">Бесплатная доставка</h3>
+              <p className="text-muted-foreground">
+                При заказе от 3000 ₽ доставка по Москве и МО бесплатная. 
+                При заказе от 5000 ₽ — бесплатная доставка по всей России!
+              </p>
+            </div>
+          </Card>
+        </section>
       </main>
 
       <footer className="border-t border-border mt-16">
