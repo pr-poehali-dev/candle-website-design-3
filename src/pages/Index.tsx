@@ -341,6 +341,15 @@ const Index = () => {
                         <h4 className="font-semibold mb-2">Время горения</h4>
                         <p className="text-sm text-muted-foreground">{candle.burnTime}</p>
                       </div>
+                      <div>
+                        <h4 className="font-semibold mb-2">Уход за свечой</h4>
+                        <ul className="text-sm text-muted-foreground space-y-1">
+                          <li>• Обрезайте фитиль до 5 мм перед каждым зажиганием</li>
+                          <li>• Первое горение не менее 2-3 часов</li>
+                          <li>• Не жгите дольше 4 часов подряд</li>
+                          <li>• Храните в прохладном месте</li>
+                        </ul>
+                      </div>
                       <Separator />
                       <div className="flex items-center justify-between">
                         <span className="text-3xl font-bold text-primary">{candle.price} ₽</span>
