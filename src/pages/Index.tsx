@@ -168,7 +168,75 @@ const Index = () => {
             🕯️ Lumière
           </h1>
           
-          <Sheet>
+          <div className="flex items-center gap-3">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="ghost" className="hidden md:flex items-center gap-2">
+                  <Icon name="Sparkles" size={18} />
+                  Уход
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl">
+                <DialogHeader>
+                  <DialogTitle className="text-3xl">Уход за свечами</DialogTitle>
+                </DialogHeader>
+                <div className="space-y-6 mt-4">
+                  <div className="space-y-4">
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                        <Icon name="Scissors" size={24} className="text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-lg mb-1">Обрезайте фитиль</h3>
+                        <p className="text-muted-foreground">Перед каждым зажиганием обрезайте фитиль до 5 мм. Это обеспечит ровное горение и предотвратит образование сажи.</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                        <Icon name="Clock" size={24} className="text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-lg mb-1">Первое горение</h3>
+                        <p className="text-muted-foreground">При первом использовании дайте воску расплавиться по всей поверхности (2-3 часа). Это предотвратит образование тоннеля.</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                        <Icon name="Flame" size={24} className="text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-lg mb-1">Время горения</h3>
+                        <p className="text-muted-foreground">Не жгите свечу дольше 4 часов подряд. Давайте ей остыть минимум 2 часа между использованиями.</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                        <Icon name="Snowflake" size={24} className="text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-lg mb-1">Хранение</h3>
+                        <p className="text-muted-foreground">Храните свечи в прохладном месте вдали от прямых солнечных лучей. Накрывайте крышкой для сохранения аромата.</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                        <Icon name="ShieldCheck" size={24} className="text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-lg mb-1">Безопасность</h3>
+                        <p className="text-muted-foreground">Никогда не оставляйте горящую свечу без присмотра. Ставьте на ровную жаропрочную поверхность вдали от сквозняков.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
+
+            <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="relative">
                 <Icon name="ShoppingCart" size={20} />
